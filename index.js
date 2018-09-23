@@ -1,6 +1,6 @@
 
-import { NativeModules } from 'react-native';
+import Noble from 'noble/with-bindings'
 
-const { RNNoble } = NativeModules;
+import bindings from 'bindings'
 
-export default RNNoble;
+export default new Noble(bindings)
